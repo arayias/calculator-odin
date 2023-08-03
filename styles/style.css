@@ -3,4 +3,51 @@
   margin: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.calc-button-grid{
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  width: 125px;
+  background-color: antiquewhite;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+
+.large-calc-button{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.calculator{
+  display: flex;
+  flex-direction: column;
+}
+
+.calculator-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #333333;
+  transition: all 0.2s ease-in-out;
+  margin: 1px;
+}
+
+.operator{
+  background-color: #f1a33c;
+  color: #fff;
+}
+
+.misc {
+  background-color: #a5a5a5;
+  color: #000000;
 }
