@@ -8,21 +8,18 @@
   <script src="scripts/app.js" defer></script>
 </head>
 <body>
-  <main>
+  <main class="container">
     <div class="calculator">
-      <div class="screen">1984</div>
+      <div class="screen"> </div>
       <div class="calc-button-grid">
-        <button id="clear" class="calculator-btn misc">
-          <span class="calculator-btn-text ">C</span>
+        <button id="clear" class="calculator-btn misc"
+        style="grid-column-start: 1;
+        grid-column-end: 4;
+        border-radius: 16.67%/50%;">
+          <span class="calculator-btn-text ">Clear</span>
         </button>
-        <button id="flip-sign" class="calculator-btn misc">
-          <span class="calculator-btn-text ">+/-</span>
-        </button>
-        <button id="percent" class="calculator-btn misc">
-          <span class="calculator-btn-text ">%</span>
-        </button>
-        <button id="divide" class="calculator-btn operator">
-          <span class="calculator-btn-text ">/</span>
+        <button id="/" class="calculator-btn operator">
+          <span class="calculator-btn-text ">&divide;</span>
         </button>
         <button class="calculator-btn number">
           <span class="calculator-btn-text">7</span>
@@ -33,8 +30,8 @@
         <button class="calculator-btn number">
           <span class="calculator-btn-text">9</span>
         </button>
-        <button id="multiply" class="calculator-btn operator">
-          <span class="calculator-btn-text">X</span>
+        <button id="*" class="calculator-btn operator">
+          <span class="calculator-btn-text">&#10005;</span>
         </button>
         <button class="calculator-btn number">
           <span class="calculator-btn-text">4</span>
@@ -45,7 +42,7 @@
         <button class="calculator-btn number">
           <span class="calculator-btn-text">6</span>
         </button>
-        <button id="subtract" class="calculator-btn operator">
+        <button id="-" class="calculator-btn operator">
           <span class="calculator-btn-text">-</span>
         </button>
         <button class="calculator-btn number">
@@ -57,16 +54,18 @@
         <button class="calculator-btn number">
           <span class="calculator-btn-text">1</span>
         </button>
-        <button id="add" class="calculator-btn operator">
+        <button id="+" class="calculator-btn operator">
           <span class="calculator-btn-text">+</span>
         </button>
-        <button class="calculator-btn large-calc-button">
+        <button class="calculator-btn number" style="  grid-column-start: 1;
+        grid-column-end: 3;
+        border-radius: 25%/50%;">
           <span class="calculator-btn-text">0</span>
         </button>
         <button class="calculator-btn number">
           <span class="calculator-btn-text">.</span>
         </button>
-        <button id="evaluate" class="calculator-btn operator">
+        <button id="=" class="calculator-btn operator">
           <span class="calculator-btn-text">=</span>
         </button>
       </div>
