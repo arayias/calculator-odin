@@ -11,7 +11,7 @@ const display = document.querySelector('.screen');
 const clearButton = document.querySelector('#clear');
 
 const round = (number) => {
-  return Math.round(number * 10000000) / 10000000;
+  return (Math.round(number * 10000000) / 10000000).toFixed(5);
 }
 const add = (lhs, rhs) => round(lhs + rhs);
 const subtract = (lhs, rhs) => round(lhs - rhs);
